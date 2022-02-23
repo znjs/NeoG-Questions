@@ -81,7 +81,7 @@ const compose = (num, ...funcs) => {
 
 console.log(compose(2, sampleFun1, sampleFun2, sampleFun3, sampleFun4));
 
-//* Without parameter
+//* Without parameter CC: Masudha Meher, Aman Dubey
 
 const reducer = (acc, curr) => curr(acc);
 const newCompose = (...fns) => (operation = (arg) => fns.reduce(reducer, arg));
