@@ -178,7 +178,7 @@ const parallelCallsAsyncAwait = async (msg1, msg2) => {
 // parallelCallsAsyncAwait("znjs", "znck");
 
 /*
-!IN THE LOOP JAKE ARCHIBALD
+!IN THE LOOP JAKE ARCHIBALD :https://youtu.be/cCOL7MC4Pl0
 */
 
 /**
@@ -189,5 +189,26 @@ const parallelCallsAsyncAwait = async (msg1, msg2) => {
  * *tasks cant be avoided in event listeners, but using rAF() for timers, data from network saves a lot of duplicate work
  * *requestAnimationFrames comes before processing CSS and painting
  * ?MICROTASK
+ * *A microtask is a short function which is executed after the function or program which created it exits and only if the JavaScript execution stack is empty, but before returning control to the event loop being used by the user agent to drive the script's execution environment.
+ * *Promises uses microtask queues
+ * *microtask queues can also block rendering if there is an infinite loop
+ * ?tasks -> one task at a time
+ * ?rAF -> all the current items are executed and additionally added items need to wait
+ * ?microtask - > all the current items are executed and along the additional items also. ie, stays on microtask until the stack becomes empty
  * *
  */
+
+const button = document.querySelector(".btn"); //*Create a button on index.html
+button.addEventListener("click", () => {
+  Promise.resolve().then(() => console.log("Microtask 1"));
+  console.log("Listener 1");
+});
+
+button.addEventListener("click", () => {
+  Promise.resolve().then(() => console.log("Microtask 2"));
+  console.log("Listener 2");
+});
+
+//?Now observe the order of execution for click event by the user and click event by script
+
+button.click();
