@@ -1,0 +1,26 @@
+{
+  "name": "znjs-neog",
+  "version": "1.0.0",
+  "description": "NeoG questions",
+  "main": "array.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/znjs/NeoG-Questions.git"
+  },
+  "keywords": [
+    "Neog",
+    "Javascript"
+  ],
+  "author": "znjs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/znjs/NeoG-Questions/issues"
+  },
+  "homepage": "https://github.com/znjs/NeoG-Questions#readme",
+  "dependencies": {
+    "react-scripts": "^5.0.0"
+  }
+}
