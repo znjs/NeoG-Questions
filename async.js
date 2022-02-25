@@ -168,7 +168,10 @@ const chainingAsyncAwait = async (msg1, msg2) => {
 
 const parallelCallsAsyncAwait = async (msg1, msg2) => {
   try {
-    const [res1, res2] = await Promise.all([fakeFetch(msg1), fakeFetch(msg2)]);
+    const [res1, res2] = await Promise.allSettled([
+      fakeFetch(msg1),
+      fakeFetch(msg2),
+    ]);
     console.log(res1, res2);
   } catch (err) {
     console.error(err);
