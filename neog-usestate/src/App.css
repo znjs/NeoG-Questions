@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Festive&family=Open+Sans&family=Roboto&display=swap');
+
 .App {
   text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.ff-festive {
+  font-family: 'Festive', cursive;
+}
+
+.ff-comic {
+  font-family: 'Comic Neue', cursive;
+}
+
+.ff-openSans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ff-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
 }
