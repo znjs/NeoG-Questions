@@ -24,3 +24,16 @@
 li {
   list-style: none;
 }
+
+.item>.outOfStock {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b0a5a5b0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}

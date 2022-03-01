@@ -14,6 +14,12 @@ import PasswordCheck from "./pages/PasswordCheck";
 import ShowPassword from "./pages/ShowPassword";
 import MiniFigma from "./pages/MiniFigma";
 import AddToCart from "./pages/AddToCart";
+import SwitchTabs from "./pages/SwitchTabs";
+import Toast from "./pages/Toast";
+import ShowToast from "./pages/ShowToast";
+import ThemeSwitch from "./pages/ThemeSwitch";
+import LikeInaList from "./pages/LikeInaList";
+import OutOfStock from "./pages/OutOfStock";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,7 +33,13 @@ ReactDOM.render(
     {/* <PasswordCheck /> */}
     {/* <ShowPassword /> */}
     {/* <MiniFigma /> */}
-    <AddToCart />
+    {/* <AddToCart /> */}
+    {/* <SwitchTabs /> */}
+    {/* <Toast /> */}
+    {/* <ShowToast /> */}
+    {/* <ThemeSwitch /> */}
+    {/* <LikeInaList /> */}
+    <OutOfStock />
   </React.StrictMode>,
   document.getElementById("root")
 );

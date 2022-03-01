@@ -1,0 +1,23 @@
+.toast-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    border-radius: 1rem 0 1rem 1rem;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.toast-container>i {
+    cursor: pointer;
+}
